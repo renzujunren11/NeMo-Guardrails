@@ -42,7 +42,7 @@ class BasicEmbeddingsIndex(EmbeddingsIndex):
 
     def _init_model(self):
         """Initialize the model used for computing the embeddings."""
-        self._model = SentenceTransformer("all-MiniLM-L6-v2")
+        self._model = SentenceTransformer("stsb-xlm-r-multilingual")
 
     def _get_embeddings(self, texts: List[str]) -> List[List[float]]:
         """Compute embeddings for a list of texts."""
